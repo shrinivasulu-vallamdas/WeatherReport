@@ -1,0 +1,18 @@
+Purpose of the Document
+The purpose of this document is to provide understanding of the weather API solution. Overview of components in the Application.
+Assumption:
+Source and Destination are configured at Root of the application
+Core Functionality
+•	Get Weather report and store it a respective folders.
+
+
+Third party tools
+•	 We have used third party API  for getting an weather reports 
+o	http://api.openweathermap.org/
+
+Github URL
+•	https://github.com/shrinivasulu-vallamdas/WeatherReport.git
+Code Coverage:
+As per inputs we need to implement TDD :
+I have created class and interfaces for implementing a Dependency Injection to moq and write a test cases for business logic instead of calling again api .However  do to limited time and time constraint i have not added Unity frame work to support the system of Dependency inject support , hence unable to write test cases for business class . i have implemented in my Project DI using Autofac
+Btw I know how to write test cases. However due to time limit I am unable process further for test cases written 
