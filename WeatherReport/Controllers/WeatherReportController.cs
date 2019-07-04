@@ -28,11 +28,14 @@ namespace WetherReport.Controllers
         /// </summary>
         /// <returns></returns>
         ///
+        //public WeatherReportController()
+        //{
 
-        public WeatherReportController()
+        //}
+        public WeatherReportController(IBuilder builder)
         {
             // Once Dependency Resolver issues Fixed we can pass Interface
-            _builder = new Builder();
+            _builder = builder;
 
         }
         [HttpGet]

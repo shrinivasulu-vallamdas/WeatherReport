@@ -6,6 +6,7 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using WeatherReport.Initializer;
 
 namespace WeatherReport
 {
@@ -13,6 +14,7 @@ namespace WeatherReport
     {
         protected void Application_Start()
         {
+            Bootstrapper.Run();
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
